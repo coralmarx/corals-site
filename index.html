@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head> 
+
+    <!-- META /3 -->
+
+    <meta charset="UTF-8">
+    <title>Coral's Website!</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- WEBSITE STUFF STARTS HERE -->
+    <img src="/assets/images/CoralsWebsite.png" style="width: 825px; margin: auto; display: block;">
+</head>
+<body>
+
+    <div class="top-bar"> <div class="marquee-wrapper"><span class="marquee-content">Welcome to my website!</span></div> </div>
+
+    <div class="mainpage">
+        
+        <!-- ABOUT ME -->
+        <div class="mainpage-aboutme" >
+            <div class="mainpage-aboutme-text" ><marquee loop="infinite">About Me</marquee></div>
+            <div style="min-height: 256px;" class="inset-bevel" > 
+            Hi my name is Coral and I like to make games and play stuff :3 all of it will be shown in due time...
+            </div>
+            <div class="bevel" style="text-align: center;" >Socials</div>
+            <div style="min-height: 25px;" class="inset-bevel" >
+                <a href="https://gamejolt.com/@CoralMarx" target="_blank"><img               src="/assets/link-buttons/gamejolt.png" alt="" style="width:134px;height:50px;border:0"></a>
+                <a href="https://x.com/CLFMarx" target="_blank"><img                         src="/assets/link-buttons/twitter.png" alt="" style="width:134px;height:50px;border:0"></a>
+                <a href="https://discord.com/users/1303174421401567236" target="_blank"><img src="/assets/link-buttons/discord.png" alt="" style="width:134px;height:50px;border:0"></a>
+            </div>
+            <img src="/assets/images/sonic.gif" style="width: 200px;">
+        </div>
+
+        <!-- CONTENT SELECTOR -->
+
+        <div class="mainpage-page">
+            <div class="mainpage-page-page" style="text-align: center; overflow-y: scroll; height: 854px;">
+                <p>Welcome to my website! My name is Coral. ( she/her )</p>
+                <hr>
+                <img src="assets/title.png" style="width: 512px; margin-top: 16px;">
+                <div style="display: flex;">
+
+                    <div>
+                        <img id="tadc" style="width: 256px; height:256px;">
+                        <p>I'm a fan of <img src="assets/images/tadc.png" style="width: 96px; vertical-align: middle; scroll-behavior: smooth;"></p>
+                    </div>
+                    <div>
+                        <img id="ddlc" src="assets/images/topple.gif" style="width: 256px; height:256px;">
+                        <p>I'm an enjoyer of a good literature club</p>
+                    </div>
+
+                </div>
+                <div style="display: flex;">
+
+                    <div>
+                        <img id="ultrakill" src="" style="width: 256px; height:256px;">
+                        <p>I'm a fan of the <img src="assets/images/ltrakill.png" style="width: 96px; vertical-align: middle;"></p>
+                    </div>
+                    <div>
+                        <img id="nuclearthrone" src="" style="width: 256px; height:256px;">
+                        <p style="font-family: 'Yung Venuz'; font-size:larger; margin: 16px;">I SIT ON THE THRONE EVERY DAY</p>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p> MY POLITICAL BELIEFS: </p>
+                <div style="display: flex;">
+                    <div>
+                        <img src="assets/images/trans.gif" style="width: 240px; height: 162px;">
+                        <p> I AM A TRANS GIRL!! I OPPOSE BIGOTRY OF ALL KINDS </p>
+                    </div>
+                    <div>
+                        <img src="assets/images/soviet.gif" style="width: 240px; height: 162px;">
+                        <p> I'm also a dirty commy >;3 </p>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        <img src="assets/images/palestine.gif" style="width: 240px; height: 162px;">
+                        <p> I stand against isreal and it's genocide, free palestine. </p>
+                    </div>
+                    <div>
+                        <img src="assets/images/vegan.gif" style="width: 240px; height: 162px;">
+                        <p> A genuine vegetarian, I hope to be vegan one day. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainpage-page-selector">
+                <a id="changesong" style="cursor:pointer;" title="Click me to change the current song!"><img src="assets/images/cd7.gif"></a>
+                <a href="/"><button class="mainpage-page-selector">Main</button></a>
+                <a href="/pages/ultrakillprogress"><button class="mainpage-page-selector">Ultrakill P Rank Progress</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-bar">
+        <a href="https://websetsbylynn.neocities.org/" target="_blank"><img src="https://websetsbylynn.neocities.org/images/wsbl88x31.png" alt="" style="width:88px;height:31px;border:0"></a>
+        <a href="https://neocities.org/" target="_blank"><img               src="/assets/link-buttons/got_html-neocities.gif"              alt="" style="width:88px;height:31px;border:0"></a>
+        <a href="https://firefox.com/" target="_blank"><img                 src="/assets/link-buttons/firefox.gif"                         alt="" style="width:88px;height:31px;border:0"></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img         src="/assets/link-buttons/005button.gif"                       alt="" style="width:88px;height:31px;border:0"></a>
+    </div>
+
+    <br><br><br>
+    <img src="/assets/images/underconstruction.gif" style="width:100%">
+
+    <audio id="song" src="" autoplay></audio>
+    <audio id="recordscratch" src="audio/scratch.mp3"></audio>
+
+</body>
+
+<script>
+
+    // FUNCTIONS :3
+
+    function startSong() {
+
+        const songPlayer = document.getElementById("song")
+
+        const songs = [
+            "audio/songs/1.mp3",
+            "audio/songs/2.mp3",
+            "audio/songs/3.mp3",
+            "audio/songs/4.mp3",
+            "audio/songs/5.mp3",
+        ]
+
+        const chosenSong = songs[Math.floor(Math.random() * songs.length )];
+        songPlayer.src = chosenSong
+        songPlayer.play()
+    }
+
+    function pickFromFolder( folder, size ) {
+        const images = []
+        for ( let index = 0; index < size; index++ ) {
+            images[index] = index + 1
+        }
+
+        const chosenImage = images[ Math.floor(Math.random() * images.length )]
+        const fullRoute = [folder, chosenImage + '.gif'].join('/')
+        return fullRoute
+    }
+
+    // RUN
+
+    startSong()
+    document.getElementById("song").volume = 0.75;
+    document.getElementById("song").onended = function() { document.getElementById("recordscratch").play() }
+    document.getElementById("recordscratch").onended = function() { startSong() }
+    document.getElementById("changesong").onclick = function () { document.getElementById("song").pause(); document.getElementById("recordscratch").play()}
+    document.getElementById("tadc").src = pickFromFolder("assets/images/TADC", 7)
+    document.getElementById("ultrakill").src = pickFromFolder("assets/images/ULTRAKILL", 7)
+    document.getElementById("nuclearthrone").src = pickFromFolder("assets/images/NT", 7)
+
+</script>

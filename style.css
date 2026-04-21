@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Comic Sans';
+    src: url(assets/fonts/COMIC.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yung Venuz';
+    src: url(assets/fonts/yv.ttf);
+    font-display: swap;
+}
+
+@keyframes slide {
+  from { background-position: 0 calc(sin(0) * 100px); }
+  to { background-position: -1920px calc(sin(10deg) ( 100px)); } /* Set to your image width */
+}
+
+.marquee-wrapper {
+  overflow: hidden; /* Clips the content */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  padding: 0%;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%; /* Initial offset */
+  animation: marquee-animation 15s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+
+img {
+    image-rendering: pixelated;
+}
+
+image {
+    image-rendering: pixelated;
+}
+
+body {
+    background-image: url("/assets/backgrounds/starsbg.gif");
+    background-repeat: repeat;
+    animation: slide 240s linear repeat;
+}
+
+div {
+    padding: 10px 10px;
+    font-family: 'Comic Sans';
+}
+
+.bevel {
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-right: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-top: 2.5px solid rgba(255, 255, 255, 0.75);
+    border-left: 2.5px solid rgba(255, 255, 255, 0.75);
+    background: linear-gradient( 180deg, #d3d3d3, darkgray)
+}
+
+.inset-bevel {
+    border-top: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-left: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-bottom: 2.5px solid rgba(255, 255, 255, 0.75);
+    border-right: 2.5px solid rgba(255, 255, 255, 0.75);
+    background: linear-gradient( 180deg, gray, rgb(63, 63, 63))
+}
+
+.top-bar {
+    color: white;
+    text-align: center;
+    background-image: url("assets/div-backgrounds/3DBlueBevel.gif");
+    outline: 0px;
+    margin-bottom: 12.5px;
+    max-width: 1180px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.bottom-bar {
+    margin-top: 12.5px;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-right: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-top: 2.5px solid rgba(255, 255, 255, 0.75);
+    border-left: 2.5px solid rgba(255, 255, 255, 0.75);
+    background: linear-gradient( 180deg, #d3d3d3, darkgray)
+}
+
+.mainpage {
+    display: flex;
+    gap:12.5px;
+    min-width: 960px;
+    max-width: 1200px;
+    margin: auto;
+    background-image: url(assets/div-backgrounds/whitemarble.gif);
+    outline: 0px;
+}
+
+.mainpage-aboutme {
+    float: left;
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    overflow:scroll;
+    gap: 12.5px;
+    outline: 0px;
+    background-image: url(assets/div-backgrounds/blackgranite.gif);
+}
+
+.mainpage-aboutme-text {
+    color: white;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-right: 2.5px solid rgba(0, 0, 0, 0.75);
+    border-top: 2.5px solid rgba(255, 255, 255, 0.75);
+    border-left: 2.5px solid rgba(255, 255, 255, 0.75);
+    background: linear-gradient( 180deg, #001aff, rgb(21, 0, 112));
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.mainpage-page {
+    float: right;
+    width: 70%;
+    outline: 0px;
+    background-image: url(assets/div-backgrounds/blackgranite.gif);
+    color: white;
+    gap: 12.5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainpage-page-page {
+    float: left;
+    width: 75%;
+
+    background-image: url(assets/div-backgrounds/invert.gif);
+}
+
+div.mainpage-page-selector {
+    float: right;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(assets/div-backgrounds/invert.gif);
+}
+
+button.mainpage-page-selector {
+    background-image: url(assets/buttons/gold_button.gif);
+    border: 0px;
+    width: 170px;
+    height: 31px;
+    margin: 10px;
+}
+
+button.mainpage-page-selector:hover {
+    background-image: url(assets/buttons/gold_button_hover.gif);
+}
+
+button.mainpage-page-selector:active {
+    background-image: url(assets/buttons/gold_button_press.gif);
+    transform: scale(0.95);
+}
+
