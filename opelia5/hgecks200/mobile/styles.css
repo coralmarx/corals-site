@@ -1,0 +1,24 @@
+html {
+    background: black;
+}
+
+body {
+    background-image: url(assets/brick.png);
+}
+
+iframe {
+    justify-content: center;
+    margin: auto;
+    width: 906px;
+    height: 370px;
+}
+
+div.game {
+    transform-origin: center center;
+    align-items: center;
+    display: flex;
+    background-image: url('assets/zz.png');
+    background-size: cover;
+    width: 952px;
+    height: 400px;
+}

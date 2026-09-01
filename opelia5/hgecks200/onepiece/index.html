@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title>onepiece</title>
+    <body style="background: black;">
+        <div class="center">
+            <button onclick="window.open('/cultivation', '_self')">door</button>
+            <br><br><hr><br>
+            <video src='vid.mp4' autoplay oncontextmenu="return false;" disablePictureInPicture id="vidid"></video><br>
+            <progress id="barid" style="width: 640px;"></progress><br>
+            <button onclick="playvideo()" class="b">play</button>
+            <button onclick="pausevideo()" class="b">pause</button>
+            <button onclick="stopvideo()" class="b">stop</button>
+        </div>
+    </body>
+
+    <script>
+        const progressbar = document.getElementById('barid')
+        const videoelement = document.getElementById("vidid")
+        var pause = false
+        window.setInterval(updatebar, 100);
+        function playvideo(){
+                videoelement.play();
+                pause = false
+        }
+
+        function pausevideo(){
+            videoelement.pause();
+            pause = true
+        }
+
+        function stopvideo(){
+            videoelement.currentTime = 0;
+        }
+        
+        function updatebar(){
+        progressbar.value = videoelement.currentTime;
+        progressbar.max = videoelement.duration;
+        }
+    </script>
+</head>

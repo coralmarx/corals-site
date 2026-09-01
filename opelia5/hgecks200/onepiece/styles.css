@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Comic Sans';
+    src: url('Comic Sans.ttf');
+}
+
+div.center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+}
+
+P {
+    font-family: 'Comic Sans';
+    color: white;
+    text-align: center;
+}
+
+button.b {
+    transform: translate(45px, 0px);
+    margin-left: auto;
+    margin-right: 90px;
+    width: 150px;
+}
