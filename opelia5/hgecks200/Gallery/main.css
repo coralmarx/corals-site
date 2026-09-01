@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Comic Sans';
+    src: url('assets/Comic Sans.ttf');
+}
+
+.door:focus {
+    background-color: transparent;
+    border: 0px;
+    background-image: url('assets/door 2.png');
+    width: 70px;
+    height: 70px;
+}
+
+.door {
+    background-color: transparent;
+    border: 0px;
+    background-image: url('assets/door 1.png');
+    width: 70px;
+    height: 70px;
+}
+
+body {
+    background-image: url(assets/brick.png);
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-image: url(assets/whitebrick.png);
+  background-size: cover;
+  float: left;
+  width: 350px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 350px;
+  height: 350px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Comic Sans';
+  color: red;
+}
+
+div.gallery video {
+    width: 350px;
+    height: 350px;
+}
