@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<style>
+    @font-face {
+        font-family: 'Slackey';
+        src: url('Slackey-Regular.ttf');
+        color: red;
+    }
+
+
+    hr {
+        width: 1510px;
+        transform:translateX(-180px);
+        color: red;
+    }
+
+    h1 {
+        color:red;
+    }
+
+    html {
+        background-image: url('background.png');
+        font-family: 'Slackey';
+    }
+
+
+    P.head {
+        transform:translate(10px, 300px);
+        text-align: center;
+        color: red;
+    }
+
+    div.head {
+        background-size:cover;
+        background-image: url('thumb.png');
+        position:fixed;
+        margin-left: 1522px;
+        margin-top: 16px;
+        border: solid 10px rgb(29, 0, 0); 
+        width: 300px;
+        height: 300px;
+    }
+
+    div.details {
+        background: rgba(129, 0, 0, 0.199);
+        color: red;
+        width: 1500px;
+        font-size: 20px;
+    }
+    button.redbut:hover {
+        background-image: url(assets/button2.png);
+    }
+    button.redbut:active {
+        background-image: url(assets/button3.png);
+    }
+    button.redbut {
+        background: transparent url(assets/button.png) no-repeat top;
+        font-family: 'lowres';
+        padding: 7px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 130%;
+        border: 0px;
+        color: rgb(110, 6, 6);
+    }
+</style>
+
+<head>
+    <title>Sven</title>
+    <button class="redbut" onclick="window.open('/wiki', '_self')">Return</button>
+    <h1>Sven</h1>
+<body>
+    <hr>
+
+    <div class="head">
+        <p class="head">This fucker and his dumb song
+        </p>
+        <audio controls src="stupidfuckingsong.wav" style="transform: translate(0, 300px);"></audio>
+    </div>
+
+    <div class="details">
+    <h2>Details</h2>
+    <p id="detailsp"></p>
+    </div><hr>
+    <div class="details">
+    <h2>Appearance</h2>
+    <p id="appearancep"></p>
+    </div><hr>
+    <div class="details">
+    <h2>Shows up in</h2>
+    <p id="showsinp"></p>
+    </div><hr>
+</body>
+<script>
+    const detailsp = document.getElementById("detailsp")
+    const appearancep = document.getElementById("appearancep")
+    const showsinp = document.getElementById("showsinp")
+
+    Promise.all([
+    fetch('details.txt').then(x => x.text()),
+    fetch('appearance.txt').then(x => x.text()),
+    fetch('showsin.txt').then(x => x.text())
+    ]).then(([detailstxt, appearancetxt, showsintxt]) => {
+    detailsp.innerHTML = detailstxt;
+    appearancep.innerHTML = appearancetxt;
+    showsinp.innerHTML = showsintxt;
+    });
+
+
+</script>
+</head>

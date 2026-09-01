@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Slackey';
+    src: url('assets/Slackey-Regular.ttf');
+}
+
+html {
+    background-image: url('assets/background.png');
+}
+
+a {
+    color: red;
+    font-family: 'Slackey';
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-family: 'Slackey';
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-family: 'Slackey';
+}
+
+P {
+    color: red;
+    font-family: 'Slackey';
+}
+
+div.container {
+    display: flex;
+    width: 1155px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: solid 10px #530000;
+    margin: auto;
+    padding: 20px;
+}
+
+div.doll {
+    margin: 20px;
+    background-color: rgba(255, 0, 0, 0.322);
+    padding: 10px;
+    width: 230px;
+    height: 300px;
+}
+
+button.redbut:hover {
+    background-image: url(assets/button2.png);
+}
+button.redbut:active {
+    background-image: url(assets/button3.png);
+}
+button.redbut {
+    background: transparent url(assets/button.png) no-repeat top;
+    font-family: 'lowres';
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 130%;
+    border: 0px;
+    color: rgb(110, 6, 6);
+}

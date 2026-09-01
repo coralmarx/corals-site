@@ -1,0 +1,26 @@
+Girl invited me over to “fix her WiFi.” I agreed, obviously. I’m a red team engineer with custom firmware on my router and a Faraday cage around my smart toaster.
+
+I showed up 10 minutes early, hoodie on, laptop in hand, booted into a hardened gentoo distro I compiled myself. She opened the door holding a MacBook Air. Chrome had 43 tabs open. I almost left right then.
+
+I asked for her network topology diagram. She laughed. “It’s just the router from the ISP.”
+Alright, I thought. Let her have it.
+
+I popped open her router admin panel. Default password: admin123. The SSID was "PrettyFlyForAWiFi". I ran a nmapscan. 12 exposed ports, 3 outdated IoT devices, and a printer running telnet. No firewall. No VLANs. Just raw digital nudity.
+
+I asked if she ever noticed weird lag. She said “yeah sometimes Netflix buffers.” I said that was probably because her TV was being used in a botnet out of Kazakhstan. She blinked twice. "Oh no, is that bad?"
+
+I offered to segment the network and install pfSense. She said she “just wanted Spotify to stop cutting out.”
+
+I airgapped her Sonos out of pity.
+
+After 20 minutes of work, I asked for her phone to remove TikTok and clean the app permissions. She said “but I need it for filters.”
+I looked into the distance. Deep sigh. I looked out the window and whispered, "The panopticon isn’t metaphorical."
+She asked if I was always this intense.
+I said no, only when the NSA is listening. Which is always.
+
+She offered coffee. I declined, caffeine raises your attack surface.
+
+When I left, she said, “Thanks, you’re like, really good with computers.”
+
+I walked away slow. Her router was still on UPnP. So was my heart.
+    You can't patch people. Believe me, I tried. 
