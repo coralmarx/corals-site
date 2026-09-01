@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Comic Sans';
+    src: url('assets/Comic Sans.ttf');
+}
+
+.door:active {
+    background-color: transparent;
+    border: 0px;
+    background-image: url('assets/door 2.png');
+    width: 70px;
+    height: 70px;
+}
+
+.gameimg {
+    width: 252px;
+}
+
+.door:hover {
+    background-color: transparent;
+    border: 0px;
+    background-image: url('assets/door 3.png');
+    width: 70px;
+    height: 70px;
+}
+
+.door {
+    background-color: transparent;
+    border: 0px;
+    background-image: url('assets/door 1.png');
+    width: 70px;
+    height: 70px;
+}
+
+head {
+    background-image: url(assets/brick.png);
+}
+
+
+body {
+    background-image: url(assets/brick.png);
+}
+
+div.sort {
+    margin: auto;
+    background-image: url('assets/fleshbox.png');
+    width: 500px;
+    height: 408px;
+}
+
+div.game {
+    display: none;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    background-image: url(assets/zz.png);
+    background-size: cover;
+    width: 886px;
+    height: 648px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px;
+}
+
+p.game {
+    color:transparent;
+}
+
+* {
+ font-family: 'ComiC Sans';
+ text-align: center;
+ color : white
+}
