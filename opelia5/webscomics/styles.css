@@ -1,0 +1,31 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+P {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+audio {
+    display: block;
+    margin: auto;
+}
+
+div.comic {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid black;
+    width: 912px;
+    height: 676px;
+}
+
+img.watermark {
+    margin-top: -175px;
+}
+
+P.comic {
+    font-size: 225%;
+}

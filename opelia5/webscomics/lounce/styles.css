@@ -1,0 +1,37 @@
+html {
+    background-color: black;
+}
+
+video {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.open {
+    transform: translate(-50%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: solid black 0px;
+    background-color: red;
+}
+
+button.redbut:hover {
+    background-image: url(files/button2.png);
+    color: white;
+}
+button.redbut:active {
+    background-image: url(files/button3.png);
+}
+button.redbut {
+    background-image: url(files/button.png) no-repeat top;
+    font-family: 'lowres';
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 130%;
+    border: 0px;
+    color: rgb(110, 6, 6);
+}
