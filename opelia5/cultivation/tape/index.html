@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<style>
+
+
+button.redbut:hover {
+    background-image: url(files/button2.png);
+    color: white;
+}
+button.redbut:active {
+    background-image: url(files/button3.png);
+}
+button.redbut {
+    background-image: url(files/button.png) no-repeat top;
+    font-family: 'lowres';
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 130%;
+    border: 0px;
+    color: rgb(110, 6, 6);
+}
+
+
+
+
+html {
+
+    background-color: black;
+}
+.tape {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    border: 0px;
+    background-image: url('files/tape.png');
+    width: 480px;
+    height: 270px;
+}
+
+.border{
+    transform: translate(725px, 605px);
+    width: 400px;
+}
+
+.grey {
+    background-color: rgb(37, 0, 0);
+}
+</style>
+<head>
+    <title>tape</title>
+    <button class="redbut" onclick="window.open('/cultivation', '_self')">return</button>
+<body>
+    <audio src="files/caseynewton.wav" id="audiop"></audio>
+    <button class="tape" id="tape" onclick="document.getElementById('audiop').play();"></button>
+    <br>
+    <div class="border">
+        <div class="grey" id="progress" style="height:24px;width:20%"></div>
+    </div> 
+</body>
+<script>
+    let audiop = document.getElementById("audiop")
+    let progressb = document.getElementById("progress")
+
+    var intervalID = window.setInterval(myCallback, 10);
+
+    function myCallback() {
+    progressb.style.width = (audiop.currentTime * 2) + '%';
+    }
+    
+
+</script>
+</head>

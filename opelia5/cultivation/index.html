@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <audio src="files/howling.wav" id="bb" autoplay></audio>
+    <title>cards</title>
+    <button class="redbut" onclick="window.open('/hgecks200/gallery', '_self')">return to home</button>
+<body>
+    <div class="bore">
+    <a href="tape"><img class= "bore" id="photo" onmouseover="scale(this)" onmouseleave="unscale(this)" src="files/john.png" alt=""></a>
+    <a href="/wiki"><img id="photo" class= "bore" onmouseover="scale(this)" onmouseleave="unscale(this)" src="files/leslie.png" alt=""></a> 
+    <a href="return"><img class= "bore" id="photo" onmouseover="scale(this)" onmouseleave="unscale(this)" src="files/FUCK.png" alt=""></a>
+    </div>
+</body>
+<script>
+
+const graph = document.getElementById("photo")
+
+function scale(peep) {
+    peep.classList.remove('deselect');
+    peep.classList.add('select');
+};
+function unscale(peep) {
+    peep.classList.remove('select');
+    peep.classList.add('deselect');
+};
+
+</script>
+</head>

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'lowres';
+    src: url('files/LowRes 3x4.ttf')
+}
+
+button.redbut:hover {
+    background-image: url(files/button2.png);
+    color: white;
+}
+button.redbut:active {
+    background-image: url(files/button3.png);
+}
+button.redbut {
+    background-image: url(files/button.png);
+    font-family: 'lowres';
+    padding: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 130%;
+    border: 0px;
+    color: rgb(110, 6, 6);
+}
+
+html {
+    background-image: url('files/bord.png');
+    background-size: cover;
+}
+
+img.bore {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+div.bore {
+    padding: 250px;
+    padding-left: 465px;
+    width: auto;
+    height: 345px;
+}
+
+.deselect {
+    transform: scale(1,1);
+    animation-name: unhover;
+    animation-duration: .1s;
+    animation-timing-function: ease-out;
+
+}
+
+.select {
+    transform: scale(1.1,1.1);
+    animation-name: hover;
+    animation-duration: .1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes unhover {
+    0% {transform: rotate(0deg); transform: scale(1.1, 1.1);}
+    100% {transform: rotate(0deg); transform: scale(1,1);}
+}
+
+@keyframes hover {
+    0% {transform: rotate(0deg); transform: scale(1, 1);}
+    100% {transform: rotate(0deg); transform: scale(1.1,1.1);}
+}
+
+.tape {
+    visibility: hidden;
+    border: 0px;
+    background-image: url('files/tape.png');
+    width: 480px;
+    height: 270px;
+}
